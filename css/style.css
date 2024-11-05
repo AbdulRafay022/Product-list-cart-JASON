@@ -555,6 +555,10 @@ video {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
@@ -565,6 +569,10 @@ video {
 
 .left-10 {
   left: 2.5rem;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .z-50 {
