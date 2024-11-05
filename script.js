@@ -166,8 +166,6 @@ data.forEach((product, index) => {
                   class="flex gap-4 bg-white border border-customRed -translate-y-1/2 py-2 px-5 rounded-full addtocart-btn-${
                     product.id
                   } addtocart-btns cursor-pointer"
-                  data-name="${product.name}"
-                 data-price="${product.price.toFixed(2)}"
                 >
                   <img src="./assets/images/icon-add-to-cart.svg" alt="" />
                   <p class="text-darkest">Add to Cart</p>
