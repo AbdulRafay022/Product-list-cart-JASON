@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Simple Tailwind Starter</title>
+  </head>
+  <body class="bg-lightest font-redHat relative overflow-hidden">
+    <!-- order confirmed -->
+    <div
+      class="bg-black bg-opacity-20 absolute md:sticky hidden backdrop-blur-md flex md:justify-center md:items-center w-screen h-screen order-confirmed bottom-0 md:top-0 left-0 z-50"
+    >
+      <div
+        class="bg-white flex flex-col md:p-6 p-4 rounded-lg gap-4 my-auto md:my-0 md:mt-0 md:w-1/3 w-full"
+      >
+        <img
+          src="assets/images/icon-order-confirmed.svg"
+          class="h-10 w-10"
+          alt=""
+        />
+        <h1 class="text-start text-3xl font-bold text-darkest">
+          Order confirmed
+        </h1>
+        <p class="text-dark text-opacity-80">We hope you enjoy your food</p>
+        <!-- Order Display -->
+        <div class="w-full flex flex-col gap-4">
+          <!-- Items -->
+          <div
+            class="max-h-64 overflow-y-auto w-full flex flex-col gap-4 bg-lightest order-display"
+          ></div>
+          <div class="flex justify-between py-2 items-center">
+            <p class="text-darkest">Order Total</p>
+            <span class="text-2xl text-darkest font-bold"
+              >$<span class="order-grand-total">0.00</span></span
+            >
+          </div>
+          <button
+            class="bg-orange-700 hover:bg-opacity-90 transition-all ease-in-out duration-700 rounded-full py-3 font-medium text-white text-opacity-90 new cursor-pointer"
+          >
+            Start New Order
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Desserts display -->
+    <div
+      class="flex flex-col gap-4 container mx-auto md:my-14 my-10 md:flex-row"
+    >
+      <h1 class="text-3xl font-bold text-darkest ml-4 absolute">Desserts</h1>
+      <div
+        class="grid md:grid-cols-3 md:w-3/5 p-2 bg-lightest gap-x-5 gap-y-8 mt-14 main-cont"
+      ></div>
+      <!-- End -->
+
+      <!-- Add to cart -->
+      <div class="md:w-1/3 flex flex-col mt-8 md:mt-0">
+        <div class="bg-white flex flex-col p-6 rounded-lg gap-4">
+          <h1 class="text-start text-2xl font-bold text-customRed">
+            Your Cart
+          </h1>
+          <!-- Empty add to cart -->
+          <div
+            class="flex flex-col justify-center items-center emptyaddtocart-cont"
+          >
+            <img
+              src="assets/images/illustration-empty-cart.svg"
+              class="max-w-[150px]"
+              alt=""
+            />
+            <p class="text-dark text-opacity-80 font-bold">
+              Your added items will appear here
+            </p>
+          </div>
+          <!-- Cart Display -->
+          <div class="w-full flex hidden flex-col gap-4 cart-display">
+            <!-- Items -->
+            <div class="max-h-64 overflow-y-auto display-desserts"></div>
+            <!-- Grand total -->
+            <div class="flex justify-between py-2 items-center">
+              <p class="text-darkest text-xl">Order Total</p>
+              <span class="text-4xl text-darkest font-bold"
+                >$<span class="grand-total">0.00</span></span
+              >
+            </div>
+            <div
+              class="bg-lightest py-4 rounded-xl flex items-center justify-center gap-2"
+            >
+              <img src="assets/images/icon-carbon-neutral.svg" alt="" />
+              <p>This is a <span>carbon-neutral</span> delivery</p>
+            </div>
+            <button
+              class="bg-orange-700 hover:bg-opacity-90 transition-all ease-in-out duration-700 rounded-full py-3 font-medium text-white text-opacity-90 confirm-order-btn cursor-pointer"
+            >
+              Confirm Order
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
