@@ -299,8 +299,9 @@ function handleItemActions(item) {
     addToCartBtn.classList.add("hidden");
     dImg.classList.add("active");
     mImg.classList.add("active");
-    number.textContent = 0;
-    itemTotal = 0;
+    increase++;
+    number.textContent = increase;
+    handleValueChange(increase);
   });
 
   function handleValueChange(newValue) {
