@@ -4,3 +4,17 @@
 .active {
   @apply border-2 border-customRed;
 }
+@layer utilities {
+  .scroll-container-light::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .scroll-container-light::-webkit-scrollbar-thumb {
+    background-color: #eee;
+    border-radius: 10px;
+  }
+
+  .scroll-container-light::-webkit-scrollbar-track {
+    background-color: #ccc; /* Red with 50% opacity */
+  }
+}

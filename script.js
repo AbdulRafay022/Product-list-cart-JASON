@@ -208,7 +208,7 @@ data.forEach((product, index) => {
                       </p>
                     </div>
                   </div>
-                  <div class="ml-auto">
+                  <div class="ml-auto mr-2">
                     <img
                       src="assets/images/icon-remove-item.svg"
                       class="border border-dark h-6 p-1 w-6 border-opacity-60 rounded-full cursor-pointer close-${
